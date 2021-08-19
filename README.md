@@ -1,2 +1,5 @@
 # Tguesdon.github.io
-My projects
+
+This is my portfolio repository. 
+
+Accessible at https://TGuesdon.github.io
