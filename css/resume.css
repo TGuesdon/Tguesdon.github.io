@@ -1,0 +1,20 @@
+#tg_main{
+    display: flex;
+}
+
+#tg_milestones{
+    width: 70%;
+}
+
+#tg_chronological_arrow{
+    width: 30%;
+}
+
+#tg_milestones h1{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+#tg_milestones h2{
+
+}
