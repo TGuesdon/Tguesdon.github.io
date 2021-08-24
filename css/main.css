@@ -46,8 +46,10 @@ a:hover{
     width: 180px;
     margin: auto;
     margin-top: 10vh;
-    background-color: black;
-    height: 180px;
+}
+
+#tg_portrait img{
+    width: 100%;
 }
 
 #tg_contact{
