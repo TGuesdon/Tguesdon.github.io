@@ -4,6 +4,7 @@
 
 #tg_milestones{
     width: 70%;
+    padding: 0% 3%;
 }
 
 #tg_chronological_arrow{
@@ -15,6 +16,63 @@
     text-align: center;
 }
 
-#tg_milestones h2{
+.tg_milestone{
+    margin-top: 5vh;
+}
 
+.tg_milestone_text{
+    text-align: justify;
+}
+
+.tg_milestone_text a{
+    font-weight: bolder;
+}
+
+.tg_milestone_text a:hover{
+    font-style: italic;
+}
+
+.tg_milestone_technology{
+    padding-left: 15px;
+    font-style: italic;
+}
+
+/**Chronological arrow**/
+
+#tg_chronological_arrow{
+    position: relative;
+    background-image: url(../assets/ladder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#tg_iut_bubble{
+    bottom: 10vh;
+    left: 45%;
+}
+
+#tg_japan_bubble{
+    bottom: 30vh;
+}
+
+#tg_univ_bubble{
+    left: 45%;
+    bottom: 50vh;
+}
+
+#tg_ach_bubble{
+    bottom: 70vh;
+}
+
+.tg_bubble_img{
+    position: absolute;
+    width: 50%;
+    filter: grayscale(70%);
+    transition: 0.2s;
+}
+
+.tg_bubble_img:hover{
+    filter: grayscale(10%);
+    width: 55%;
 }

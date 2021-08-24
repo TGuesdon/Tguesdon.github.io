@@ -26,7 +26,6 @@ a:hover{
 #tg_body{
     display: flex;
     height: 100vh;
-    overflow: hidden;
 }
 
 #tg_nav{
