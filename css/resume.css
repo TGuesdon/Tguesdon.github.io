@@ -14,6 +14,7 @@
 #tg_milestones h1{
     font-family: 'Permanent Marker', cursive;
     text-align: center;
+    font-size: 30pt;
 }
 
 .tg_milestone{
@@ -26,7 +27,7 @@
 }
 
 .tg_milestone_text{
-    text-align: justify;
+    text-align: justify;   
 }
 
 .tg_milestone_text a{
