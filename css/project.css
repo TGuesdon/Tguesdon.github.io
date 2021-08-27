@@ -7,7 +7,7 @@
 
 #tg_project_header h1{
     font-family: 'Permanent Marker', cursive;
-    font-size: 30pt;
+    font-size: 2.5rem;
 }
 
 #tg_project_header_info{
@@ -58,4 +58,50 @@
 
 #tg_tldr_text{
     text-align: justify;
+}
+
+.tg_img_block{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.tg_project_image{
+    display: block;
+    width: 100%;
+}
+
+.tg_img_block .tg_project_image_caption{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background: rgba(0,0, 0, 0.8);
+    color: var(--over-bg-color);
+}
+
+.tg_img_block:hover .tg_project_image_caption{
+    display: block
+}
+
+#tg_project_text p{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+#tg_project_text h2{
+    font-size: 2rem;
+}
+
+#tg_project_text h2::before {
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid black;
+    margin: 0 0.5rem;
+    width: 10%;
+    transform: translateY(-0.5rem);
 }

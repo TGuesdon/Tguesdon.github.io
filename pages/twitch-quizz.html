@@ -37,7 +37,7 @@
                 <!--<p id="tg_project_header_info"><i class="fas fa-calendar-alt"></i> 24/08/2021 | <a href="/"><i class="fab fa-github-square"></i> Github</a> | <i class="fas fa-users"></i> : none</p>-->
             </div>
             <div id="tg_project_body">
-                <div id="tg_project_sidebar">
+                <aside id="tg_project_sidebar">
                     <div id="tg_project_sidebar_info">
                         <div class="tg_project_sidebar_info_line">
                             <a href="https://github.com/TGuesdon/twitch-quizz"><i class="fab fa-github-square"></i> Github</a> 
@@ -77,10 +77,47 @@
                             <li>Tmi.JS <i class="fab fa-twitch"></i></li>
                         </ul>
                     </div>
-                </div>
+                </aside>
                 
                 <div id="tg_project_text">
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    <h2>What is it ?</h2>
+                    <p>
+                        This project allows twitch streamers to take part in a quizz with their viewers without any software installation on viewer AND streamer side.
+                        To achieve this, I used a NodeJS server running an Angular application and a twitch bot using Tmi.JS. 
+                        The twitch bot read the streamer irc channel and communicates any answer to the quizz to the Angular application, which then compare the answer to the database, hosted on Firebase.
+                    </p>
+
+                    <p>
+                        There is currently two game mode, the first which is a classic quizz with viewers earning points when they get the right answer, 
+                        and the second where the goal is to get the closest guess from the answer.
+                        Everyone can propose new questions by using a form accessible on the website. There is around 1000 (french) questions right now.
+                        I also added a "premium" user functionnality, which allows users to create their own categories for 4$.
+                        This was added to help me pay the hosting server.
+                    </p>
+
+
+                    <div class="tg_img_block">
+                        <img class="tg_project_image" src="../assets/twitch-quizz/game_choice.PNG"/>
+                        <span class="tg_project_image_caption">Game mode selection screen</span>
+                    </div>
+
+                    <div class="tg_img_block">
+                        <img class="tg_project_image" src="../assets/twitch-quizz/game.PNG"/>
+                        <span class="tg_project_image_caption">Game screen - The one that needs to be streamed</span>
+                    </div>
+
+                    <h2>How to use it ?</h2>
+
+                    <p>
+                        It is really simple, you only have to enter your twitch username, and then stream the website to your viewers.
+                        To answer, they have to type !g the_answer. You can choose which categories you want to play with and how much time the viewers have to answer.
+                    </p>
+
+                    <div class="tg_img_block">
+                        <img class="tg_project_image" src="../assets/twitch-quizz/index.PNG"/>
+                        <span class="tg_project_image_caption">Home screen</span>
+                    </div>
+
                 </div>
             </div>
         </main>
