@@ -36,6 +36,10 @@ a:hover{
     position: relative;
 }
 
+#tg_nav_mobile{
+    display: none;
+}
+
 #tg_main{
     width: 85%;
     background-color: var(--main-bg-color);
@@ -95,4 +99,51 @@ a:hover{
 
 #tg_all_projects{
     border-bottom: solid 1px var(--text-color);
+}
+
+/** Small desktop */ 
+@media screen and (max-width: 1280px) {
+    #tg_menu{
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #tg_body{
+        display: block;
+    }
+
+    #tg_nav{
+        width: auto;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+    }
+
+    #tg_nav_mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #tg_nav_mobile_name{
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    #tg_nav_mobile_hamburger_button{
+        padding: 15px;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    #tg_portrait, #tg_contact{
+        display: none;
+    }
+
+    #tg_menu{
+        margin-top: 0vh;
+    }
+
 }
