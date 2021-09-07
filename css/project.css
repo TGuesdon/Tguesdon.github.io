@@ -1,7 +1,7 @@
 #tg_project_header{
-    width: 100%;
+    width: 96%;
     background-color: var(--over-bg-color);
-    padding: 5px 25px;
+    padding: 5px 2%;
     box-shadow: var(--material-shadow);
 }
 
