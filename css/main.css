@@ -118,6 +118,7 @@ a:hover{
     #tg_body{
         display: block;
         height: auto;
+        position: relative;
     }
 
     #tg_main{
@@ -133,23 +134,25 @@ a:hover{
         position: fixed;
         width: 100%;
         top: 0px;
+        z-index: 999;
     }
 
     #tg_nav_mobile{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     #tg_nav_mobile_name{
-        padding: 15px;
         font-size: 1.3rem;
+        padding: 15px;
     }
 
     #tg_nav_mobile_hamburger_button{
-        padding: 15px;
         font-size: 1.3rem;
         cursor: pointer;
+        padding: 15px;
     }
 
     #tg_portrait, #tg_contact{

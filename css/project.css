@@ -26,17 +26,17 @@
 }
 
 #tg_project_sidebar_info{
-    width: 100%;
+    width: 94%;
     background-color: var(--over-bg-color);
-    padding: 15px 35px;
+    padding: 15px 3%;
     border-left: solid 5px var(--link-color);
 }
 
 #tg_project_sidebar_technologies{
     margin-top: 2vh;
-    width: 100%;
+    width: 94%;
     background-color: var(--over-bg-color);
-    padding: 15px 35px;
+    padding: 15px 3%;
     border-left: solid 5px var(--link-color);
 }
 
