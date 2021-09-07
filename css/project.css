@@ -2,7 +2,7 @@
     width: 100%;
     background-color: var(--over-bg-color);
     padding: 5px 25px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: var(--material-shadow);
 }
 
 #tg_project_header h1{
@@ -104,4 +104,33 @@
     margin: 0 0.5rem;
     width: 10%;
     transform: translateY(-0.5rem);
+}
+
+@media screen and (max-width: 900px) {
+    
+    #tg_main{
+        margin-top: 5vh;
+    }
+
+    #tg_project_body{
+        width: 96%;
+        display: block;
+    }
+
+    #tg_project_header h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #tg_project_sidebar{
+        width: 100%;
+    }
+
+    #tg_project_sidebar_info{
+        width: auto;
+    }
+
+    #tg_project_text{
+        width: 96%;
+    }
 }

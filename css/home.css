@@ -28,3 +28,17 @@
 #tg_main_incitator_arrow{
     display: block;
 }
+
+@media screen and (max-width: 900px) {
+    #tg_main_welcome h1{
+        font-size: 30pt;
+    }
+
+    #tg_main_incitator_arrow{
+        display: none;
+    }
+
+    #tg_main_incitator div{
+        margin-left: 0;
+    }
+}
