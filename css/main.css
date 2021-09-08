@@ -115,6 +115,10 @@ a:hover{
 
 @media screen and (max-width: 900px) {
 
+    #tg_main{
+        margin-top: 55px;
+    }
+
     #tg_body{
         display: block;
         height: auto;

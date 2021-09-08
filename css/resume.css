@@ -21,6 +21,10 @@
     margin-top: 5vh;
 }
 
+.tg_milestone h2{
+    font-family: 'Metrophobic', sans-serif;
+}
+
 .tg_organisation_title{
     font-weight: bolder;
     color: black;
@@ -87,3 +91,19 @@
     width: 55%;
 }
 
+@media screen and (max-width: 900px) {
+
+    #tg_main{
+        display: block;
+    }
+
+    #tg_milestones{
+        width: 94%;
+        padding: 2vh 3%;
+    }
+
+    #tg_chronological_arrow{
+        display: none;
+    }
+
+}

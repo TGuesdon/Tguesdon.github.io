@@ -108,8 +108,9 @@
 
 @media screen and (max-width: 900px) {
     
-    #tg_main{
-        margin-top: 5vh;
+    #tg_project_header{
+        background-color: transparent;
+        box-shadow: none;
     }
 
     #tg_project_body{
