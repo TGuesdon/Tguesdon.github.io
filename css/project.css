@@ -40,6 +40,10 @@
     border-left: solid 5px var(--link-color);
 }
 
+#tg_project_sidebar_technologies ul i{
+    float:right;
+}
+
 #tg_project_text{
     width: 75%;
 }
