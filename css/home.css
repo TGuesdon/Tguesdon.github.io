@@ -29,6 +29,13 @@
     display: block;
 }
 
+
+#tg_animation video{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 900px) {
     #tg_main_welcome h1{
         font-size: 30pt;
@@ -41,4 +48,10 @@
     #tg_main_incitator div{
         margin-left: 0;
     }
+
+    #tg_main_container{
+        margin-bottom: 0;
+        height: 90vh;
+    }
+
 }
