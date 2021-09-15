@@ -64,11 +64,20 @@
     text-align: justify;
 }
 
+.tg_img_gallery{
+    display: flex;
+    justify-content: space-around;
+}
+
 .tg_img_block{
     position: relative;
     width: 70%;
     margin: auto;
     margin-top: 2vh;
+}
+
+.tg_img_block.small{
+    width: 30%;
 }
 
 .tg_project_image{
@@ -95,6 +104,12 @@
     padding-left: 10%;
     padding-right: 10%;
     text-align: justify;
+}
+
+#tg_project_text ul{
+    padding-left: 15%;
+    padding-right: 15%;
+    list-style: square;
 }
 
 #tg_project_text h2{
