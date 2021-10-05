@@ -107,8 +107,62 @@
                         The results shown on this pages use adaptative thresholding. I still have to test canny edge detection, this page will be updated when I do so.     
                     </p>
 
-                    <h2></h2>
+                    <h2>Contouring</h2>
 
+                    <p>
+                        Contouring is the most important functionnality of this project, mainly because it is used for both object centering and background uniformization.
+                        An approximate contouring can be used for object centering but a very precise one is needed for background uniformization in order to avoid leftovers, often due to the object's shadow. 
+                    </p>
+
+                    <p>
+                        I tested global tresholding with Otsu's binarization and adaptative gaussian tresholding to get the contours of the object. 
+                        Right now the best fit seems to be the adaptative gaussian tresholding, but it still isn't perfect and canny edge detection is left to be tested.
+                    </p>
+
+                    <div class="tg_img_gallery">
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/ecommerce-photo-cleaner/contour_1.JPG" alt="before"/>
+                            <span class="tg_project_image_caption">Contours detection with adaptative gaussian tresholding</span>
+                        </div>
+    
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/ecommerce-photo-cleaner/contour_2.JPG" alt="after"/>
+                            <span class="tg_project_image_caption">Contours detection with adaptative gaussian tresholding</span>
+                        </div>
+                    </div>
+
+                    <h2>Object centering</h2>
+
+                    <p>
+                        Object centering after contour detection is relatively easy, the pixels inside the contour are moved with the difference between the image's center and the contour's center.
+                    </p>
+
+                    <div class="tg_img_gallery">
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/ecommerce-photo-cleaner/before_centering_1.JPG" alt="before"/>
+                            <span class="tg_project_image_caption">Before</span>
+                        </div>
+    
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/ecommerce-photo-cleaner/after_centering.JPG" alt="after"/>
+                            <span class="tg_project_image_caption">After</span>
+                        </div>
+                    </div>
+
+                    <h2>Background uniformization</h2>
+                    
+                    <div class="tg_img_gallery">
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/ecommerce-photo-cleaner/origin_2.JPG" alt="before"/>
+                            <span class="tg_project_image_caption">Before</span>
+                        </div>
+
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/ecommerce-photo-cleaner/background_2.JPG" alt="after"/>
+                            <span class="tg_project_image_caption">After</span>
+                        </div>
+                    </div>
+                    
                     <h2>Illumination correction</h2>
 
                     <div class="tg_img_gallery">

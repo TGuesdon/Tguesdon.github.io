@@ -126,7 +126,19 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    .tg_img_gallery{
+        display: block;
+    }
+
+    .tg_img_block.small{
+        width: 100%;
+    }
     
+    .tg_img_block .tg_project_image_caption{
+        display: block;
+    }
+
     #tg_project_header{
         background-color: transparent;
         box-shadow: none;
