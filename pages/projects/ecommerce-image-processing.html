@@ -151,6 +151,11 @@
 
                     <h2>Background uniformization</h2>
                     
+                    <p>
+                        As for object centering, the main difficulty of background uniformization is the contour detection.
+                        Once this is done, I replace every pixels outside of the contour with white pixels.
+                    </p>
+
                     <div class="tg_img_gallery">
                         <div class="tg_img_block small">
                             <img class="tg_project_image" src="../../assets/ecommerce-photo-cleaner/origin_2.JPG" alt="before"/>
@@ -164,6 +169,10 @@
                     </div>
                     
                     <h2>Illumination correction</h2>
+
+                    <p>
+                        The illumination correction fix is in fact an improvement of the image's contrast. I used <a href="https://en.wikipedia.org/wiki/Adaptive_histogram_equalization">CLAHE algorithm</a> in order to do this.
+                    </p>
 
                     <div class="tg_img_gallery">
                         <div class="tg_img_block small">
