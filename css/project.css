@@ -71,7 +71,7 @@
 
 .tg_img_block{
     position: relative;
-    width: 70%;
+    max-width: 70%;
     margin: auto;
     margin-top: 2vh;
 }
@@ -81,8 +81,9 @@
 }
 
 .tg_project_image{
+    max-width: 100%;
     display: block;
-    width: 100%;
+    margin: auto;
 }
 
 .tg_img_block .tg_project_image_caption{
@@ -104,6 +105,11 @@
     padding-left: 10%;
     padding-right: 10%;
     text-align: justify;
+}
+
+#tg_project_text h3{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #tg_project_text ul{
