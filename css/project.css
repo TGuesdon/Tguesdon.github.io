@@ -101,6 +101,10 @@
     display: block
 }
 
+#tg_project_text a{
+    font-weight: bolder;
+}
+
 #tg_project_text p{
     padding-left: 10%;
     padding-right: 10%;
