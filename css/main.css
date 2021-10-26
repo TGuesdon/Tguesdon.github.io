@@ -30,7 +30,6 @@ a:hover{
 
 #tg_body{
     display: flex;
-    height: 100vh;
 }
 
 #tg_nav{
@@ -45,6 +44,11 @@ a:hover{
     display: none;
 }
 
+#tg_nav_menu{
+    position: sticky;
+    top:0px;
+}
+
 #tg_main{
     width: 85%;
     background-color: var(--main-bg-color);
@@ -54,7 +58,7 @@ a:hover{
     max-width: 100%;
     width: 180px;
     margin: auto;
-    margin-top: 10vh;
+    padding-top: 10vh;
 }
 
 #tg_portrait img{

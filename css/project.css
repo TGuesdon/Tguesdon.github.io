@@ -111,7 +111,7 @@
     text-align: justify;
 }
 
-#tg_project_text h3{
+#tg_project_text h3, #tg_project_text h4, #tg_project_text h5{
     padding-left: 10%;
     padding-right: 10%;
 }
