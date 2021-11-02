@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/project.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7387b37e9e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
+</head>
+<body>
+    <div id="tg_body">
+        <nav id="tg_nav">
+            <div id="tg_nav_mobile">
+                <div id="tg_nav_mobile_name"><a href="../../index.html">Thomas Guesdon</a></div>
+                <div id="tg_nav_mobile_hamburger_button"><i class="fas fa-bars"></i></div>
+            </div>
+            <div id="tg_nav_menu">
+                <div id="tg_portrait">
+                    <img src="../../assets/portrait.PNG"/>
+                </div>
+                <div id="tg_contact">
+                    <div id="tg_name">Thomas Guesdon</div>
+                    <div id="tg_mail"><a href="mailto:thomas.guesdon12@gmail.com"><i class="far fa-envelope"></i> Mail</a></div>
+                    <div id="tg_github"><a href="https://github.com/TGuesdon"><i class="fab fa-github-square"></i> Github</a></div>
+                    <div id="tg_twitter"><a href="https://twitter.com/R4tonLaveur"><i class="fab fa-twitter-square"></i> Twitter</a></div>
+                </div>
+                <div id="tg_menu">
+                    <a href="../../index.html"><div id="tg_home">Home</div></a>
+                    <a href="../../pages/resume.html"><div id="tg_resume">My resume</div></a>
+                    <a href="../../pages/projects/twitch-quizz.html"><div id="tg_twitch_quizz">Twitch interactive quizz <i class="fab fa-twitch"></i></div></a>
+                    <a href="../../pages/projects/ecommerce-image-processing.html"><div id="tg_ecommerce_image_processing">TG's E-commerce photo cleaner</div></a>
+                    <a href="../../pages/all-projects.html"><div id="tg_all_projects">All other cool projects</div></a>
+                </div>
+            </div>
+        </nav>
+        <main id="tg_main">
+            <div id="tg_project_header">
+                <h1>Procedural Planet Generator</h1>
+                <!--<p id="tg_project_header_info"><i class="fas fa-calendar-alt"></i> 24/08/2021 | <a href="/"><i class="fab fa-github-square"></i> Github</a> | <i class="fas fa-users"></i> : none</p>-->
+            </div>
+            <div id="tg_project_body">
+                <aside id="tg_project_sidebar">
+                    <div id="tg_project_sidebar_info">
+                        <div class="tg_project_sidebar_info_line">
+                            <i class="fab fa-github-square"></i> Private
+                        </div>
+                        <div class="tg_project_sidebar_info_line">
+                            <i class="fas fa-calendar-alt"></i> 19/01/2020
+                        </div>
+                        <div class="tg_project_sidebar_info_line">
+                            <!-- Finished | Abandonned | Work in progress | Maintained -->
+                            <i class="fas fa-tools"></i> Finished
+                        </div>
+                        <div class="tg_project_sidebar_info_line">
+                            <!-- Deployment link | Not available -->
+                            <i class="fas fa-rocket"></i>Not available
+                        </div>
+                        <div class="tg_project_sidebar_info_line">
+                            <i class="fas fa-users"></i> William Daigremont, Robin Montfermé, Léo Souvay, Théo Videau
+                        </div>
+                        <div class="tg_project_sidebar_info_line">
+                            <!-- Personnal project | Professionnal project | University project -->
+                            <i class="fas fa-file-signature"></i> University project
+                        </div>
+                        <hr />
+                        <div>
+                            <span id="tg_tldr">TLDR :</span>
+                            <p id="tg_tldr_text">
+                                Procedural planet generator is a university project in which we generate a low poly planet with procedural algorithms.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="tg_project_sidebar_technologies">
+                        <div><i class="fas fa-cogs"></i> Technologies used :</div>
+                        <ul>
+                            <li>C++ <i class="devicon-cplusplus-plain colored"></i></li>
+                            <li>OpenGL <i class="devicon-opengl-plain colored"></i></li>
+                            <li>GLFW</li>
+                            <li>Eigen3</li>
+                            <li>SOIL</li>
+                            <li>Surface_Mesh</li>
+                            <li>Google Test</li>
+                        </ul>
+                    </div>
+                </aside>
+                <div id="tg_project_text">
+
+                    <h2>
+                        Report ( french )
+                    </h2>
+
+                    <p>
+                        <a href="../../assets/downloads/procedural_planet_generator_report.pdf" download>PDF File</a>
+                    </p>
+
+                    <h2>
+                        What is it ?
+                    </h2>
+
+                    <p>
+                        Procedural planet generator is a university project in which we generate a low poly planet with procedural algorithms. 
+                        This includes biomes, oceans and mountains and uses various concepts such as Perlin Noises, Uniform repartition of points on a sphere, texturing or seeding.
+                    </p>
+
+                    <p>
+                        I mainly worked on the tectonic plates and mountains.
+                    </p>
+
+                    <h3>
+                        Final result
+                    </h3>
+
+                    <div class="tg_img_block">
+                        <img class="tg_project_image" src="../../assets/procedural-planet/terrestre.png"/>
+                        <span class="tg_project_image_caption">A planet generated with our tool</span>
+                    </div>
+
+                    <h3>
+                        Different icosahedron subdivision
+                    </h3>
+
+                    <div class="tg_img_gallery">
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/procedural-planet/subdivision_3.png" alt="before"/>
+                            <span class="tg_project_image_caption">A sphere generated with an icosahedron subdivised 3 times</span>
+                        </div>
+    
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/procedural-planet/subdivision_6.png" alt="after"/>
+                            <span class="tg_project_image_caption">A sphere generated with an icosahedron subdivised 6 times</span>
+                        </div>
+                    </div>
+
+                    <h3>Tectonic plates, mountains and temperature</h3>
+
+                    <div class="tg_img_gallery">
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/procedural-planet/plaques.png" alt="before"/>
+                            <span class="tg_project_image_caption">Tectonic plates</span>
+                        </div>
+    
+                        <div class="tg_img_block small">
+                            <img class="tg_project_image" src="../../assets/procedural-planet/temperature.png" alt="after"/>
+                            <span class="tg_project_image_caption">Temperatures ( From coldest (black) to hottest (white) )</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<footer>
+    <script src="../../js/nav-mobile.js"></script>
+</footer>
+</html>
