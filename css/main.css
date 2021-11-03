@@ -50,6 +50,7 @@ a:hover{
 }
 
 #tg_main{
+    min-height: 100vh;
     width: 85%;
     background-color: var(--main-bg-color);
 }

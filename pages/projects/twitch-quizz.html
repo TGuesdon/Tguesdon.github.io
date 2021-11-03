@@ -124,6 +124,73 @@
                         <span class="tg_project_image_caption">Home screen</span>
                     </div>
 
+                    <h2>How was it made ?</h2>
+
+                    <p>
+                        The website works thanks to 3 parts :
+                    </p>
+
+                    <ul>
+                        <li>The Database : A Firebase project which contains all the datas.</li>
+                        <li>The Server : A NodeJS server which serve the client's web files and host a twitch bot.</li>
+                        <li>The Client : An Angular client, which compare inputs from the twitch bot to the answer.</li>
+                    </ul>
+
+                    <h3>Firebase Database</h3>
+
+                    <p>
+                        This is a classic firebase project, with realtime database used to store data in JSON format and authentification to allow account management on the client.
+                        The security of a realtime database is different than a classic SQL Database, as the access are accessible to everyone using the client.
+                        To be sure that my data is secure, I use realtime databasse access rules which allows me to specify rights on each modification. 
+                    </p>
+
+                    <h3>NodeJS Server</h3>
+
+                    <p>
+                        The NodeJS server has two roles. It serves the web files to the client using express as any node js server. 
+                        Once the server is running, I use socket.io to communicate with the client, and run a twitch bot which connect to the twitch irc channel asked by the client.
+                        The bot then send any command typed in the chat to the client.
+                    </p>
+
+                    <h3>Angular Client</h3>
+
+                    <p>
+                        The Angular client is the biggest part of this application. It can be divided into two parts : the back-office and the game in itself.
+                    </p>
+                    
+                    <h4>The Game part</h4>
+
+                    <p>
+                        This part contains everything needed to play the game. It starts with the 'twitch-linker' page (which is the home landing page of the website), which will ask the server to connect to the provided twitch channel's irc chat.
+                        The first interaction with firebase database occurs just after a successful connection, when the user has to chose on which categories he will play.
+                        Finally, there is the gameloop, on which inputs coming from the twitch chat bot (running on the nodeJS server) are compared to the current question. 
+                        A scoreboard and controls to grant bonus or malus are included in the game.
+                    </p>
+
+                    <h4>The Back-office</h4>
+
+                    <p>
+                        This part allows administrators to manage content of the quizz. There is only one pages accessible to everyone, which is the one used to submit new questions.
+                        For every other pages of the back-office, I used Angular Material to develop a clean and ergonomic way of managing our content.
+                        My main issue was to display a lot of questions (1128 as of 03/11/2021) in a table without too much loading or lags when doing updates.
+                        I chose to display a table for each category of question, which is encapsulated in a tab Material module, and to further improve performance I added pagination to these tables.
+                        This allows ergonomic manipulation and good performances. The table contains controls to edit or remove any question.
+                    </p>
+
+                    <div class="tg_img_block">
+                        <img class="tg_project_image" src="../../assets/twitch-quizz/dashboard.PNG"/>
+                        <span class="tg_project_image_caption">Dashboard</span>
+                    </div>
+
+                    <p>
+                        I also included a statistics screen that allows me to see who used the website and how much participation they got from their twitch chat.
+                    </p>
+
+                    <div class="tg_img_block">
+                        <img class="tg_project_image" src="../../assets/twitch-quizz/stats.PNG"/>
+                        <span class="tg_project_image_caption">Stats screen</span>
+                    </div>
+
                 </div>
             </div>
         </main>
