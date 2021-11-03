@@ -31,6 +31,7 @@
 
 
 #tg_animation video{
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -52,6 +53,10 @@
     #tg_main_container{
         margin-bottom: 0;
         height: 90vh;
+    }
+
+    #tg_animation video{
+        display: block;
     }
 
 }
