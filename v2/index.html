@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas — Portfolio</title>
+  <meta name="description" content="Thomas, fullstack developer — portfolio.">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Exo+2:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="stage">
+    <div id="css3d-back"></div>
+    <canvas id="gl"></canvas>
+    <div id="css3d"></div>
+  </div>
+
+  <!-- Intro -->
+  <div id="intro-ui">
+    <div id="crank-ring" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <circle class="track" cx="50" cy="50" r="46"/>
+        <circle class="fill" cx="50" cy="50" r="46"/>
+      </svg>
+      <svg class="arrows" viewBox="0 0 100 100">
+        <path d="M50 12 A38 38 0 0 1 88 50" /><path d="M84 42 L88 51 L94 43" />
+        <path d="M50 88 A38 38 0 0 1 12 50" /><path d="M16 58 L12 49 L6 57" />
+      </svg>
+    </div>
+    <div class="hint" id="hint">
+      <span class="blink">↻</span> <span id="hint-text">Grab the crank and turn it clockwise</span>
+      <small>or mash Space</small>
+    </div>
+    <button id="skip" type="button">Skip intro</button>
+  </div>
+
+  <div id="loader"><div class="bar"><i></i></div><span>Initialising base systems…</span></div>
+
+  <!-- Mobile / fallback overlay (filled by JS when the 3D screen isn't used) -->
+  <div id="overlay"></div>
+
+  <button id="sound" type="button" aria-label="Toggle sound">
+    <svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="waves" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="mute" d="m16 9 6 6m0-6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+
+  <div id="lightbox" hidden><img alt=""></div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
