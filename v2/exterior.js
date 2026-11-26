@@ -228,7 +228,7 @@ function signCanvas() {
   ctx.fillStyle = 'rgba(230,225,210,0.75)';
   ctx.textAlign = 'center';
   ctx.font = '900 110px Impact, "Arial Black", sans-serif';
-  ctx.fillText('SECTOR  07', 512, 115);
+  ctx.fillText("THOMAS'  BUNKER", 512, 115, 980);
   ctx.font = '700 34px "Share Tech Mono", monospace';
   ctx.fillText('AUTHORIZED PERSONNEL ONLY', 512, 170);
   // erode the paint
