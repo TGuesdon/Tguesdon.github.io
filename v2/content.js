@@ -25,8 +25,11 @@ export const PROJECTS = [
     title: "Hi, I'm Thomas",
     subtitle: ['A fullstack developer with interests in web development and signal processing'],
     html: `
-<h2>Web developer at ACH International <span>Since february 2019</span></h2>
-<p>I have been working at ACH International as a web developer part-time since february 2019. I did a full rework of their main online store Idealtek around winter 2019. I also did most of the back-end part of their two websites Sunraev and Idealrent. Our next project together is a fully customized Wordpress theme compatible with Woocommerce for their online stores.</p>
+<h2>Frontend developer at BeTomorrow <span>Since 2022</span></h2>
+<p>I joined BeTomorrow as a frontend developer in 2022. I worked on the BeTomorrow website as well as on a range of internal and client projects, from classic web apps to AI-powered products built on RAG pipelines and agentic workflows.</p>
+<div class="tech">React, Next.js, Contentful, Python, LangGraph, Langfuse, RAG, AI agents, Supabase</div>
+<h2>Web developer at ACH International <span>2019 - 2022</span></h2>
+<p>I worked part-time at ACH International as a web developer from 2019 to 2022. I did a full rework of their main online store Idealtek around winter 2019, and built most of the back-end of their two websites Sunraev and Idealrent. I also developed a fully customized WordPress theme compatible with WooCommerce for their online stores.</p>
 <div class="tech">Php, Javascript, MySQL, Wordpress, Woocommerce, Odoo</div>
 <h2>Computer science master at Université de Bordeaux <span>2018 - 2021</span></h2>
 <p>I completed in summer 2021 my computer science master degree with a specialization in image and sound processing. We learned there a lot of cool concepts such as code complexity, convolutional neural network, 3D Fourier transform or convolution matrix.</p>
